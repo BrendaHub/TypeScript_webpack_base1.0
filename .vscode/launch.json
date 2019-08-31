@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/src/"
+        },
+        {
+            "name": "Attach to url with files served from ./out",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "url": "<url of the open browser tab to connect to>",
+            "webRoot": "${workspaceFolder}/src"
+        },
+        {
+            "name": "Launch index.html (disable sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "sourceMaps": false,
+            "file": "${workspaceRoot}/src/index.html"//每次都需要更改此路径
+        },
+        {
+            "name": "Launch localhost",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost/mypage.html",
+            "webRoot": "${workspaceFolder}/src/"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
